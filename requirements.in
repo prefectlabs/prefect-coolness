@@ -4,6 +4,8 @@
 
 marvin
 
+authlib>=1.6.5
+
 beautifulsoup4
 mechanicalsoup
 

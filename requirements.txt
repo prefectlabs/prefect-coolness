@@ -13,7 +13,7 @@ ag-ui-protocol==0.1.9
     # via pydantic-ai-slim
 aiohappyeyeballs==2.6.1
     # via aiohttp
-aiohttp==3.12.15
+aiohttp==3.13.0
     # via huggingface-hub
 aiosignal==1.4.0
     # via aiohttp
@@ -21,7 +21,7 @@ aiosqlite==0.21.0
     # via
     #   marvin
     #   prefect
-alembic==1.16.5
+alembic==1.17.0
     # via
     #   marvin
     #   prefect
@@ -51,30 +51,32 @@ asttokens==3.0.0
     # via stack-data
 asyncpg==0.30.0
     # via prefect
-attrs==25.3.0
+attrs==25.4.0
     # via
     #   aiohttp
     #   cyclopts
     #   jsonschema
     #   referencing
-authlib==1.6.4
-    # via fastmcp
+authlib==1.6.5
+    # via
+    #   -r requirements.in
+    #   fastmcp
 beautifulsoup4==4.14.2
     # via
     #   -r requirements.in
     #   mechanicalsoup
-boto3==1.40.42
+boto3==1.40.51
     # via pydantic-ai-slim
-botocore==1.40.42
+botocore==1.40.51
     # via
     #   boto3
     #   s3transfer
-cachetools==6.2.0
+cachetools==6.2.1
     # via
     #   google-auth
     #   prefect
     #   prefect-cloud
-certifi==2025.8.3
+certifi==2025.10.5
     # via
     #   apprise
     #   httpcore
@@ -126,7 +128,7 @@ docstring-parser==0.17.0
     #   cyclopts
 docutils==0.22.2
     # via rich-rst
-duckdb==1.4.0
+duckdb==1.4.1
     # via -r requirements.in
 email-validator==2.3.0
     # via pydantic
@@ -140,15 +142,15 @@ executing==2.2.1
     # via
     #   logfire
     #   stack-data
-fastapi==0.118.0
+fastapi==0.119.0
     # via prefect
-fastavro==1.12.0
+fastavro==1.12.1
     # via cohere
 fastmcp==2.12.4
     # via prefect-mcp
-filelock==3.19.1
+filelock==3.20.0
     # via huggingface-hub
-frozenlist==1.7.0
+frozenlist==1.8.0
     # via
     #   aiohttp
     #   aiosignal
@@ -156,13 +158,13 @@ fsspec==2025.9.0
     # via
     #   huggingface-hub
     #   prefect
-genai-prices==0.0.29
+genai-prices==0.0.31
     # via pydantic-ai-slim
 google-auth==2.41.1
     # via
     #   google-genai
     #   pydantic-ai-slim
-google-genai==1.39.1
+google-genai==1.43.0
     # via pydantic-ai-slim
 googleapis-common-protos==1.70.0
     # via opentelemetry-exporter-otlp-proto-http
@@ -220,7 +222,7 @@ humanize==4.13.0
     #   prefect
 hyperframe==6.1.0
     # via h2
-idna==3.10
+idna==3.11
     # via
     #   anyio
     #   email-validator
@@ -231,7 +233,7 @@ importlib-metadata==8.7.0
     # via opentelemetry-api
 iniconfig==2.1.0
     # via pytest
-invoke==2.2.0
+invoke==2.2.1
     # via mistralai
 ipython==9.6.0
     # via -r requirements.in
@@ -280,9 +282,9 @@ lazy-object-proxy==1.12.0
     # via openapi-spec-validator
 linkify-it-py==2.0.3
     # via markdown-it-py
-logfire==4.10.0
+logfire==4.13.2
     # via pydantic-ai-slim
-logfire-api==4.10.0
+logfire-api==4.13.2
     # via
     #   pydantic-evals
     #   pydantic-graph
@@ -306,7 +308,7 @@ marvin==3.2.2
     # via -r requirements.in
 matplotlib-inline==0.1.7
     # via ipython
-mcp==1.15.0
+mcp==1.17.0
     # via
     #   fastmcp
     #   pydantic-ai-slim
@@ -318,11 +320,11 @@ mechanicalsoup==1.4.0
     # via -r requirements.in
 memray==1.18.0
     # via -r requirements.in
-mistralai==1.9.10
+mistralai==1.9.11
     # via pydantic-ai-slim
 more-itertools==10.8.0
     # via openapi-core
-multidict==6.6.4
+multidict==6.7.0
     # via
     #   aiohttp
     #   yarl
@@ -334,7 +336,7 @@ nexus-rpc==1.1.0
     # via temporalio
 oauthlib==3.3.1
     # via requests-oauthlib
-openai==2.0.0
+openai==2.3.0
     # via pydantic-ai-slim
 openapi-core==0.19.5
     # via fastmcp
@@ -404,7 +406,7 @@ pendulum==3.1.0
     # via prefect
 pexpect==4.9.0
     # via ipython
-platformdirs==4.4.0
+platformdirs==4.5.0
     # via textual
 pluggy==1.6.0
     # via pytest
@@ -414,7 +416,7 @@ prompt-toolkit==3.0.52
     # via
     #   ipython
     #   pydantic-ai-slim
-propcache==0.3.2
+propcache==0.4.1
     # via
     #   aiohttp
     #   yarl
@@ -436,7 +438,7 @@ pyasn1-modules==0.4.2
     # via google-auth
 pycparser==2.23
     # via cffi
-pydantic==2.11.9
+pydantic==2.12.0
     # via
     #   ag-ui-protocol
     #   anthropic
@@ -458,24 +460,24 @@ pydantic==2.11.9
     #   pydantic-extra-types
     #   pydantic-graph
     #   pydantic-settings
-pydantic-ai==1.0.12
+pydantic-ai==1.0.18
     # via marvin
-pydantic-ai-slim==1.0.12
+pydantic-ai-slim==1.0.18
     # via
     #   pydantic-ai
     #   pydantic-evals
-pydantic-core==2.33.2
+pydantic-core==2.41.1
     # via
     #   cohere
     #   prefect
     #   pydantic
-pydantic-evals==1.0.12
+pydantic-evals==1.0.18
     # via pydantic-ai-slim
-pydantic-extra-types==2.10.5
+pydantic-extra-types==2.10.6
     # via
     #   prefect
     #   prefect-cloud
-pydantic-graph==1.0.12
+pydantic-graph==1.0.18
     # via pydantic-ai-slim
 pydantic-settings==2.11.0
     # via
@@ -511,8 +513,6 @@ python-dotenv==1.1.1
 python-multipart==0.0.20
     # via mcp
 python-slugify==8.0.4
-    # via prefect
-python-socks==2.7.2
     # via prefect
 pytz==2025.2
     # via
@@ -556,7 +556,7 @@ rfc3339-validator==0.1.4
     # via
     #   openapi-schema-validator
     #   prefect
-rich==14.1.0
+rich==14.2.0
     # via
     #   cyclopts
     #   fastmcp
@@ -582,7 +582,7 @@ ruamel-yaml==0.18.15
     # via prefect
 ruamel-yaml-clib==0.2.14
     # via ruamel-yaml
-ruff==0.13.2
+ruff==0.14.0
     # via -r requirements.in
 s3transfer==0.14.0
     # via boto3
@@ -604,7 +604,7 @@ sniffio==1.3.1
     #   prefect
 soupsieve==2.8
     # via beautifulsoup4
-sqlalchemy==2.0.43
+sqlalchemy==2.0.44
     # via
     #   alembic
     #   marvin
@@ -626,7 +626,7 @@ tenacity==9.1.2
     #   pydantic-ai-slim
 text-unidecode==1.3
     # via python-slugify
-textual==6.2.0
+textual==6.3.0
     # via memray
 tokenizers==0.22.1
     # via cohere
@@ -708,7 +708,7 @@ urllib3==2.5.0
     #   mechanicalsoup
     #   requests
     #   types-requests
-uv==0.8.22
+uv==0.9.2
     # via
     #   prefect
     #   prefect-cloud
@@ -731,7 +731,7 @@ wrapt==1.17.3
     # via
     #   opentelemetry-instrumentation
     #   opentelemetry-instrumentation-httpx
-yarl==1.20.1
+yarl==1.22.0
     # via aiohttp
 zipp==3.23.0
     # via importlib-metadata
