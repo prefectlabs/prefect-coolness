@@ -1,5 +1,6 @@
 -e ../../PrefectHQ/prefect
 -e ../../PrefectHQ/prefect-cloud
+-e ../../PrefectHQ/prefect-mcp-server
 
 marvin
 

@@ -1,0 +1,2 @@
+# Override prefect-mcp-server's git dependency with our local editable install
+-e ../../PrefectHQ/prefect

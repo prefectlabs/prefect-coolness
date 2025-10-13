@@ -17,7 +17,7 @@
 	mv .bookkeeping/uv.next .bookkeeping/uv
 
 %.txt: %.in .bookkeeping/uv
-	uv pip compile --upgrade --output-file $@ $<
+	uv pip compile --upgrade --overrides overrides.txt --output-file $@ $<
 
 .PHONY: install
 install: .bookkeeping/development.txt

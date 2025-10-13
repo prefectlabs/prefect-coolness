@@ -1,1 +1,2 @@
 - This project is my repo of personal Prefect flows for testing Prefect
+- Use `make` to recompile requirements.txt after updating requirements.in
